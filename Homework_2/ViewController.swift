@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +45,36 @@ class ViewController: UIViewController {
         
         tavern.enterTavern(hero: andy)
         tavern.enterTavern(hero: sona)
+    }
+}
+
+//MARK: Task 12
+extension Int {
+    mutating func raisToThePower(power: Int) -> Int {
+        let temp = self
+        var result = 1
+        
+        if power > 1 {
+            for _ in 1..<power {
+                self *= temp
+                result = self
+            }
+        } else if power == 1 {
+            result = self
+        }
+        return result
+    }
+}
+
+extension String {
+    var isPalindrome: Bool {
+        let word = self.filter { $0 != " " }
+            for (i, character) in word.enumerated() {
+                if character != Array(word)[word.count-i-1] {
+                    return false
+                }
+            }
+            return true
     }
 }
 

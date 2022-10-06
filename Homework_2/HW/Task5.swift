@@ -35,6 +35,6 @@ class CalculatorPro: Calculator {
     }
     
     func raisToThePower (number: Decimal, power: Int) -> Decimal {
-        return pow(number, power)
+        pow(number, power)
     }
 }
