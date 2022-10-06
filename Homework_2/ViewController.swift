@@ -69,12 +69,12 @@ extension Int {
 extension String {
     var isPalindrome: Bool {
         let word = self.filter { $0 != " " }
-            for (i, character) in word.enumerated() {
-                if character != Array(word)[word.count-i-1] {
-                    return false
-                }
+        for (i, character) in word.enumerated() {
+            if character != Array(word)[word.count-i-1] {
+                return false
             }
-            return true
+        }
+        return true
     }
 }
 

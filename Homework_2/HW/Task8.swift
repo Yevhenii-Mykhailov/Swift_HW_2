@@ -35,10 +35,6 @@ struct ButchersWife: Fightable {
 struct Warrior: Hero {
     var name: String
     
-    func run() {
-        
-    }
-    
     func fight() {
         print("\(name) warrior: Fight!")
     }
@@ -46,10 +42,6 @@ struct Warrior: Hero {
 
 struct WarriorsPartner: Hero {
     var name: String
-    
-    func run() {
-        
-    }
     
     func fight() {
         print("\(name) warrior's partner: Fight!")

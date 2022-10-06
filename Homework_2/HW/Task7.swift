@@ -19,3 +19,22 @@ protocol Fightable {
 protocol Hero: Movable, Fightable {
     var name: String { get }
 }
+
+//MARK: Task 13
+extension Movable {
+    func run () {
+        
+    }
+}
+
+extension Fightable {
+    func fight () {
+        
+    }
+}
+
+extension Hero {
+    func shout () {
+        print("\(self.name): I will fight you all!!")
+    }
+}

@@ -26,5 +26,5 @@ class SuperProCalc: CalculatorPro {
             }
             
             return result
-    }
+        }
 }
